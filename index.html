@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <title>CRUD Operations</title>
+</head>
+
+<body>
+    <div class="title text-center mb-5 p-4 shadow">
+            <h1 class="text-uppercase ">crud</h1>
+            <p class="text-uppercase">Operation System</p>
+
+    </div>
+    <div class="container">
+        <div class="crud">
+            <div class="inputs">
+                <input class="form-control" type="text" placeholder="Title" id="title" />
+                <div class="price">
+                    <input onkeyup="calcTotal()" class="form-control" type="number" placeholder="Price" id="price" />
+                    <input onkeyup="calcTotal()" class="form-control" type="number" placeholder="Taxes" id="taxes" />
+                    <input onkeyup="calcTotal()" class="form-control" type="number" placeholder="Ads" id="ads" />
+                    <input onkeyup="calcTotal()" class="form-control" type="number" placeholder="Discount"
+                        id="discount" />
+                    <p id="total"></p>
+                </div>
+                <input class="form-control" type="number" placeholder="Count" id="count" />
+                <input class="form-control" type="text" placeholder="Category" id="category" />
+                <button class="formBtn" id="createBtn">Create</button>
+            </div>
+            <div class="outputs">
+                <input onkeyup="search(this.value)" class="form-control" type="text" placeholder="Search" id="search" />
+                <div class="searchBtns">
+                    <button class="formBtn" onclick="getSearchMood(this.id)" id="searchTitle">
+                        Search By Title
+                    </button>
+                    <button class="formBtn" onclick="getSearchMood(this.id)" id="searchCategory">
+                        Search By Category
+                    </button>
+                </div>
+                <div class="text-center" id="deleteAll"></div>
+                    <div class="tableData mt-5">
+                        <table class="table text-center table-dark table-hover" id="showTable">
+                            <thead>
+                                <td>ID</td>
+                                <td>TITILE</td>
+                                <td>PRICE</td>
+                                <td>TAXES</td>
+                                <td>ADS</td>
+                                <td>DISCOUNT</td>
+                                <td>TOTAL</td>
+                                <td>CATEGORY</td>
+                                <td>UPDATE</td>
+                                <td>DELETE</td>
+                            </thead>
+                            <tbody id="tBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="footer shadow-lg">
+        <div class="text-center text-white py-5">
+            <p class="my-0"> &copy; Copyright <span class="fw-bold">Asmaa Abd El-Nasser</span> . All Rights Reserved</p>
+        </div>
+    </div>
+
+
+    <script src="./JS/popper.min.js"></script>
+    <script src="./JS/bootstrap.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>

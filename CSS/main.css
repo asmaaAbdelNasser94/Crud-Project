@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap");
+
+body{
+    background-color: #344648;
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+}
+.title{
+    background-color: #7D8E95;
+    font-size: 25px;
+}
+.title h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #FBE0C3;
+}
+.title p{
+    color: #FBE0C3;
+}
+input{
+    color: #FBE0C3 !important;
+    margin: 10px 0;
+    background-color: #0f1c1e !important;
+    border-style: none !important;
+    padding: 10px !important;
+    transition: 0.8s !important;
+    -webkit-transition: 0.8s !important;
+    -moz-transition: 0.8s !important;
+    -ms-transition: 0.8s !important;
+    -o-transition: 0.8s !important;
+}
+input::placeholder{
+    color: #FBE0C3 !important;
+}
+#category{
+    margin-top: 20px;
+}
+input:focus {
+    background-color: #1d2729 !important ;
+    transform: scale(1.1);
+}
+.formBtn{
+    border-radius: 5px;
+    background-color: #ffba98df !important;
+    margin: 15px 0;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 8px;
+    border-style: none;
+    transition: 0.8s;
+    box-shadow:  0.5rem 1rem rgba(0, 0, 0, 0.015) !important;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.formBtn:hover{
+    letter-spacing: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.614);
+    background-color: transparent !important;
+    transform: scale(1.1);
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.price input{
+    width: 20%;
+}
+.price p{
+    background-color: rgb(168, 40, 31);
+    padding: 8px;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+.price p::before{
+    content: 'Total : ';
+}
+#createBtn , #deleteAllBtn{
+    width: 100%;
+}
+.searchBtns{
+    display: flex;
+    justify-content: space-between;
+}
+.searchBtns button{
+    width: 45%;
+}
+
+.table .smallBtn{
+    margin: 0;
+    padding: 5px 15px;
+    text-transform: capitalize;
+}
+
+.tableData{
+    text-transform: capitalize;
+}
